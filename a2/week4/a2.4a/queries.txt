@@ -1,0 +1,19 @@
+Database: sd1b
+Tabel: fruits (id, name, color, sweetness)
+sweetness = hoe zoet het fruit is, van 1 t/m 4
+
+1. Alle gegevens
+SELECT * FROM `fruits`;
+Resultaat: alle 4 de fruitsoorten (appel, peer, sinaasappel, braam)
+
+2. Alleen id 3
+SELECT * FROM `fruits` WHERE `id` = 3;
+Resultaat: 1 record, sinaasappel
+
+3. Aantal records
+SELECT COUNT(*) AS totaal FROM `fruits`;
+Resultaat: 4
+
+4. Namen die met een b beginnen
+SELECT * FROM `fruits` WHERE `name` LIKE 'b%';
+Resultaat: braam
